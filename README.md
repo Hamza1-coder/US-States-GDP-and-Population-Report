@@ -7,11 +7,11 @@
 * To find GDP:
  GDP = CALCULATE(SUM(Indicator[Value]))
 * To find GDP per Captia:
-### GDP per Captia = DIVIDE([Population],[GDP],0)
+GDP per Captia = DIVIDE([Population],[GDP],0)
 * To find Population:
-### Population = CALCULATE(SUM('US States Population by Year'[Value]))
+Population = CALCULATE(SUM('US States Population by Year'[Value]))
 * To find GDP Growth
-### GDP Growth = 
+GDP Growth = 
 var First_Year = CALCULATE(MIN(Indicator[Year])) 
 var Latest_Year = CALCULATE(MAX(Indicator[Year]))
 var FirstYearGDP = CALCULATE([GDP], Indicator[Year] = First_Year)
